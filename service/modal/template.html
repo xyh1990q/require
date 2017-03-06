@@ -1,0 +1,10 @@
+<div class="modal-left">
+    <i class="cloud-icon-modal-{{type}}"></i>
+</div>
+<div class="modal-right">
+    <div class="modal-title" ng-if="title">{{title}}</div>
+    <div class="modal-body" ng-if="body" ng-bind-html-unsafe="body"></div>
+    <div class="modal-footer" ng-if="buttons.length">
+        <a ng-repeat="button in buttons" ng-click="button.click()" href="javascript:;">{{button.name}}</a>
+    </div>
+</div>

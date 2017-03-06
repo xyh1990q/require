@@ -1,0 +1,52 @@
+.modal.fade .modal-dialog{
+    text-align: center;
+}
+.modal-content {
+    display: inline-block;
+    text-align: left;
+}
+.modal.fade .modal-dialog, .modal-content {
+    width: auto;
+    height: 180px;
+}
+.modal-left {
+    padding: 30px 0 0 30px;
+    width: 94px;
+    float: left;
+}
+.modal-right {
+    padding: 30px 20px 0 20px;
+    width: 336px;
+    float: left;
+}
+.modal-title {
+    height: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    word-break: break-all;
+}
+.modal-body {
+    line-height: 21px;
+    max-width: 290px;
+    height: 60px;
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    overflow: hidden;
+}
+.modal-footer {
+    text-align: right;
+    margin: 12px 0 0 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+.modal-footer a {
+    border-right: 1px solid #EEE;
+    padding: 0 16px;
+    margin-right: -1px;
+}
