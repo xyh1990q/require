@@ -1,0 +1,16 @@
+.editor-menu{
+
+}
+.editor-menu > span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.editor-menu i:hover{
+    background: #d4d4d4;
+}
+.editor-menu i.active{
+    background: #eaeaea;
+}

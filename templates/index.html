@@ -1,3 +1,29 @@
-<div ng-controller="index">
-    <div class="ssss"> 12312313</div>
+<div ng-controller="index" >
+    <div class="ssss" cloudscrollbar> 12312313</div>
+    <div ng-repeat="bean in slideList">
+        {{bean.text}}
+    </div>
+
+
+    <!--<div slide-img="slideList"></div>-->
+
+    <div editor></div>
+
+
+    <script>
+        function deleteRangeContents(flag) {
+            var div = document.getElementById("div");
+            var rangeObj = document.createRange();
+            if(flag) {
+                // selectNodeContents指选中Range对象中的所有内容  进行删除掉
+                rangeObj.selectNodeContents(div);
+                rangeObj.deleteContents();
+            }else {
+                rangeObj.selectNode(div);
+                rangeObj.deleteContents();
+            }
+        }
+
+
+    </script>
 </div>

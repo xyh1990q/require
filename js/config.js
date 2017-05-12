@@ -18,10 +18,18 @@ requirejs.config({
         "ui-bootstrap": "lib/angular-bootstrap/ui-bootstrap-tpls.min",
 
         "jquery.nicescroll": "lib/jquery.nicescroll/jquery.nicescroll",
+        "jquery.perfect-scrollbar": "lib/perfect-scrollbar/js/perfect-scrollbar",
 
-        "angular.modal": "service/modal/modal",
-        "angular.loadList": "service/loadList",
-        "angular.leftMenu": "directive/leftMenu/leftMenu",
+        "angular.modal": "service/common/modal/modal",
+        "angular.loadList": "service/common/loadList",
+        "angular.slideService": "service/index/slideService",
+
+        "angular.slideImg": "directive/slideImg/slideImg",
+        "angular.editor": "directive/editor/editor",
+        "angular.scrollbar": "directive/scrollbar/scrollbar",
+
+
+        "angular.filter": "filter/commonFilter",
     },
     shim: {
         "angular": {
@@ -40,8 +48,14 @@ requirejs.config({
         "ui-bootstrap": {
             deps: ["angular"],   //依赖模块
         },
-        "angular.leftMenu": {
-            deps: ["angular"],   //依赖模块
+        "angular.scrollbar": {
+            deps: ["angular","jquery.perfect-scrollbar","style!./lib/perfect-scrollbar/css/perfect-scrollbar.min.css"]   //依赖模块
+        },
+        "angular.slideImg": {
+            deps: ["angular","style!directive/slideImg/slideImg"]   //依赖模块
+        },
+        "angular.editor": {
+            deps: ["angular","style!directive/editor/skin/editorFont.css","style!directive/editor/editor"]   //依赖模块
         }
     }
 });

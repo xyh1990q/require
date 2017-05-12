@@ -13,7 +13,6 @@
                 // 解决火狐下一个很诡异的问题
                 var changeField = $.browser.mozilla ? (mutation.target.scrollTop + mutation.target.scrollHeight) : mutation.target.scrollHeight;
                 if ($(mutation.target).data('height') != changeField) {
-                    Ps.update(mutation.target);
                 }
                 $(mutation.target).data('height', changeField);
             });
@@ -64,7 +63,6 @@
                             if (window.getComputedStyle(element[0]).position === 'static') {
                                 element.css('position', 'relative');
                             }
-                            Ps.initialize(element[0], defaultStyle);
                             observer && observer.observe(element[0], observeConfig);
 
                         },0);
@@ -77,7 +75,7 @@
 
                             style = (document.defaultView.getComputedStyle||window.getComputedStyle)(element[0],null);
                             fixHeight = parseInt(style.borderTopWidth,10) + parseInt(style.borderBottomWidth,10);
-                            
+
                             if (element.scrollTop() + element.outerHeight() > element[0].scrollHeight + fixHeight - 5) {
                                 angular.isFunction($scope.onbottom) && $scope.onbottom();
                             }

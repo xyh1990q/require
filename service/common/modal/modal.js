@@ -3,7 +3,7 @@
 (function() {
     'use strict';
     define([
-        'style!service/modal/style.css',
+        'style!service/common/modal/style.css',
     ], function () {
         myApp.provide.factory('Modal', ['$modal', function ($modal) {
             var returnFunction;
@@ -14,7 +14,7 @@
                 this.open = function () {
                     self.dialog = $modal.open({
                         // keyboard: false,
-                        templateUrl: 'service/modal/template.html',
+                        templateUrl: 'service/common/modal/template.html',
                         backdrop: typeof self.data.backdrop === 'undefined' ? 'static' : self.data.backdrop,
                         controller: function ($scope) {
                             self.data.buttons = self.data.buttons || [{name: "确定", cmd: "ok"}];

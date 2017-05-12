@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "text":"标题1",
+    "img":"img/1.jpg"
+  },
+  {
+    "id":2,
+    "text":"标题2",
+    "img":"img/2.jpg"
+  },
+  {
+    "id":3,
+    "text":"标题3",
+    "img":"img/3.jpg"
+  },
+  {
+    "id":4,
+    "text":"标题4",
+    "img":"img/4.jpg"
+  }
+]

@@ -14,6 +14,7 @@ define(["angular", "angular-route","bootstrap","ui-bootstrap"],function(){
                 myApp.controllerProvider = $controllerProvider;
                 myApp.compileProvider = $compileProvider;
                 myApp.provide = $provide;
+                myApp.filterProvider = $filterProvider;
 
                // require(["angular.leftMenu"], function(){});
 
